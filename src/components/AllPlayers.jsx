@@ -42,10 +42,10 @@ return(
    <div className="main">
    <form onSubmit={searchBarHandler}>
     <label>
-        Search:
-        <input type="text" placeholder="search" value={searchValue} onChange={(e) => setSearchValue(e.target.value)}/>   
+        Search Puppies:
+        <input type="text" placeholder="Puppy Name" value={searchValue} onChange={(e) => setSearchValue(e.target.value)}/>   
     </label>
-    <button type="submit">Search</button>
+    <button type="submit" className="submitBtn">Search</button>
     </form>
 
     { (searchResult || player).map((player) => (

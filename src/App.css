@@ -20,11 +20,11 @@ button {
   margin: 5px;
 }
 
-#deletebtn {
+#deletebtn, .resetBtn {
   color: red;
 }
 
-#viewbtn{
+#viewbtn, .submitBtn{
   color: green;
 }
 
@@ -43,4 +43,9 @@ button {
 
 .pups{
  background-color:rgb(162, 231, 162);
+}
+
+.player, .containers {
+  background-color: rgb(124, 188, 244);
+
 }

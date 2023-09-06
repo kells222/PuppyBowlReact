@@ -34,7 +34,7 @@ export default function SinglePlayer() {
           {singlePlayer && (
               
               <section className= "singleplayer">
-              <div>
+              <div className="player">
                 <img className="image" src={singlePlayer.imageUrl} />
               </div>
               <div >

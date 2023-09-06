@@ -52,13 +52,13 @@ const  NewPlayerForm = () => {
     return (
         
     <form onSubmit={submitHandler} className="form" >
-    <div className="container">
+    <div className="containers">
         <p>
-            <label htmlFor="name">NAME:</label>
+            <label htmlFor="name">Name:</label>
             <input onChange={onPuppyNameChanged}
         type="text" 
         id="name" /> <br/>
-        <label htmlFor="breed">BREED:</label>
+        <label htmlFor="breed">Breed:</label>
             <input onChange={onPuppyBreedChanged}
         type="text" 
         id="breed"/><br/>
@@ -67,7 +67,7 @@ const  NewPlayerForm = () => {
         type="text" 
         id="url" /> <br/>
 
-    <label>Status:<select value={playerStatus} onChange={onPuppyStatusChanged}>
+    <label>Status(Pick One):<select value={playerStatus} onChange={onPuppyStatusChanged}>
     <option value="bench">Bench</option>
     <option value="field">Field</option>
     </select></label> 
@@ -75,8 +75,8 @@ const  NewPlayerForm = () => {
     </p> 
     </div>
     <p className="buttons">
-        <button onClick={resetHandler} type="reset" className="buttonAlt">Reset</button>
-        <button onClick={submitHandler} type="submit" className="button">Add New Player</button>
+        <button onClick={resetHandler} type="reset" className="resetBtn">Reset</button>
+        <button onClick={submitHandler} type="submit" className="submitBtn">Add New Player</button>
     </p>
     </form>
     );

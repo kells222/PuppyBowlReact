@@ -27,11 +27,13 @@ export default function SinglePlayer() {
 
       return (
         <>
+        <div className="pups">
+
           {error && <p>{error}</p>}
           {singlePlayer === [] ? <p>Error loading data</p> : ""}
           {singlePlayer && (
-    
-            <section className= "singleplayer">
+              
+              <section className= "singleplayer">
               <div>
                 <img className="image" src={singlePlayer.imageUrl} />
               </div>
@@ -41,9 +43,10 @@ export default function SinglePlayer() {
                 <h3>Status:{singlePlayer.status}</h3>
                 <h3>Team: {singlePlayer.team && singlePlayer.team.name}</h3>
               </div>
-              <button onClick={()=> navigate("/")}>Close</button>
+              <button onClick={()=> navigate("/")}>Back to home page</button>
             </section>
           )}
+        </div>
         </>
       );
     }

@@ -12,3 +12,35 @@
 .read-the-docs {
   color: #888;
 }
+
+button {
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#deletebtn {
+  color: red;
+}
+
+#viewbtn{
+  color: green;
+}
+
+
+.background {
+  background-color: greenyellow;
+}
+
+.main {
+  background-color: cadetblue;
+}
+
+.bg-body-tertiary {
+  background-color: darkseagreen;
+}
+
+.pups{
+ background-color:rgb(162, 231, 162);
+}

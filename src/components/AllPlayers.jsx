@@ -55,8 +55,8 @@ return(
         <h2>{player.breed}</h2>
         <img src={player.imageUrl} alt="photo" />
     </div>
-    <button onClick={() => clickHandler(player.id)}>View Puppy</button>
-    <button onClick={() => deleteHandler(player.id)}>Delete</button></>
+    <button id='viewbtn' onClick={() => clickHandler(player.id)}>View Puppy</button>
+    <button id='deletebtn'onClick={() => deleteHandler(player.id)}>Delete</button></>
     ))}
     </div>
         
